@@ -1,0 +1,3 @@
+# About Me 👋🎨🚀
+
+Hello, I'm Rishi. While I may not have prior experience in clubs, I'm enthusiastic about diving into this new journey. My passion lies in the world of design, and I'm particularly captivated by the frontend aspect. I'm eager to embark on a learning journey to master various programming languages for frontend development. My goal is to apply this newfound knowledge to future projects, where I can contribute my design skills and technical expertise to create impactful and visually appealing solutions. I'm excited to connect with fellow club members, share experiences, and explore the exciting possibilities that lie ahead in the world of technology and design. 🌟💡🎨
