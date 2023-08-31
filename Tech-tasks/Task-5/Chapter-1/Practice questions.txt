@@ -1,0 +1,109 @@
+1. Which of the following are operators, and which are values?
+ans.
+Operators:
+*(Multipication)
+-(Subration)
+/(Division)
++(addtion)
+
+Values:
+'hello'
+-88.8
+5
+
+2. Which of the following is a variable, and which is a string?
+ans.
+Varable: spam
+String :'spam'
+
+3. Name three data types.
+ans. 1. Intergers
+     2. Float
+     3. String
+
+4. What is an expression made up of? What do all expressions do?
+ans.An expression is made up of one or more values, operators or variables, combined in a way that can be evaluated to produce a result. Expressions can be simple, like a single value, or complex, involving multiple operations.
+All expressions, when evaluated, produce a value. This value can be of various types (integer, float, string, etc.), depending on the operations and values involved in the expression. They are used to perform calculations, make decisions, and manipulate data.
+
+5. This chapter introduced assignment statements, like spam = 10. What is the difference between an expression and a statement?
+ans.Expression:
+An expression is a combination of values, variables, operators, and/or function calls that can be evaluated to produce a single value. Expressions have a value and can be used within larger expressions or assignments. For example, 2 + 3 is an expression that evaluates to the value 5.
+
+Statement:
+A statement is a complete line of code that performs an action. Statements are used to control the flow of a program, perform assignments, or define functions and classes. An assignment statement like spam = 10 is an example of a statement; it assigns the value 10 to the variable spam but doesn't have a value of its own.
+
+6. What does the variable bacon contain after the following code runs?
+
+bacon = 20
+bacon + 1
+ans.
+Now, after the code runs the Output will be 21.
+bacon = bacon + 1
+bacon = 20 + 1 = 21.
+
+7. What should the following two expressions evaluate to?
+
+'spam' + 'spamspam'
+'spam' * 3
+ans.
+1st Expression:
+'spam' + 'spamspam' evaluates to 'spamspamspam'. This uses the concatenation operator + to combine the two strings 'spam' and 'spamspam' into a single string 'spamspamspam'.
+2nd Epression:
+'spam' * 3 evaluates to 'spamspamspam' as well. Here, the multiplication operator * is used to repeat the string 'spam' three times, resulting in the concatenated string 'spamspamspam'.
+
+8. Why is eggs a valid variable name while 100 is invalid?
+ans.
+A Variable name should start with letters or underscore and should be followed by letters or numbers, but it cant start with numbers.
+So, eggs are valid name and 100 is not.
+
+9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+ans.
+int(): This function converts a value to an integer. If the value is a floating-point number, it truncates the decimal part.
+
+float(): This function converts a value to a floating-point number. It can handle both integer and floating-point inputs.
+
+str(): This function converts a value to a string. It can handle various types of inputs, including numbers, booleans, and other objects.
+
+10. Why does this expression cause an error? How can you fix it?
+
+'I have eaten ' + 99 + ' burritos.'
+ans.
+The expression 'I have eaten ' + 99 + ' burritos.' causes an error because it's trying to concatenate a string with an integer directly. In Python, you can concatenate strings together using the + operator, but when you include non-string values like integers, you need to explicitly convert them to strings before concatenation.
+
+So, here u have to u str() function to concatenate. 
+
+The correct code is:
+'I have eaten ' + str(99) + ' burritos.'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+1. What are escape characters?
+ans.Escape characters in programming are special sequences of characters that are used to represent certain non-printable or reserved characters in strings. They begin with a backslash \ followed by a character or code that has a special meaning.
+\\: Backslash
+\': Single quotation mark
+\": Double quotation mark
+\n: Newline (line break)
+\t: Tab
+\r: Carriage return
+\b: Backspace
+\f: Form feed (used for formatting)
+\v: Vertical tab
+
+2. What do the \n and \t escape characters represent?
+ans.
+\n: Newline
+The \n escape character represents a newline or line break.
+When included in a string, it causes the text following it to be placed on a new line.
+It's commonly used to create line breaks in strings or to format multi-line text.
+
+\t: Tab
+The \t escape character represents a tabulation or tab character.
+When included in a string, it causes a horizontal tab space to be inserted.
+It's often used for creating tabular or indented text.
+
+3. How can you put a \ backslash character in a string?
+ans.To include a backslash \ character in a string, you need to use the escape character \\. This is because the backslash itself is an escape character that is used to introduce special sequences. To represent a literal backslash, you use a double backslash \\.
+
+Example:
+my_string = "This is a backslash: \\"
+print(my_string)
+# Output: This is a backslash: \
+
+4. The string value "Howl's Moving Castle" is a valid string. Why isn’t it a problem that the single quote character in the word Howl's isn’t escaped?
+ans.you can use single quotes ' or double quotes " to define string literals. This flexibility allows you to include single quotes within a string that is enclosed in double quotes, and vice versa, without needing to escape them.
+
+So, the string "Howl's Moving Castle" is a valid string in Python, and it's not a problem that the single quote character ' in the word Howl's isn't escaped. This is because the string itself is enclosed in double quotes. Similarly, if you want to include double quotes within a string enclosed in single quotes, you don't need to escape them either.
+
+Example:
+title1 = "Howl's Moving Castle"
+title2 = 'The "Python" Programming Language'
+
+print(title1)  # Output: Howl's Moving Castle
+print(title2)  # Output: The "Python" Programming Language
+
+5. If you don’t want to put \n in your string, how can you write a string with newlines in it?
+ans.If you don't want to use the \n escape sequence to add newlines in your string, you can create a multi-line string using triple quotes (''' or """). This allows you to include newlines directly in the string without using escape sequences.
+
+6. What do the following expressions evaluate to?
+
+'Hello, world!'[1]
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+ans.
+'Hello, world!'[1]:
+This expression extracts the character at index 1 from the string.
+Indexing starts from 0, so the character at index 1 is 'e'.
+Result: 'e'
+
+'Hello, world!'[0:5]:
+This expression uses slicing to extract characters from index 0 up to (but not including) index 5.
+It includes characters at indices 0, 1, 2, 3, and 4.
+Result: 'Hello'
+
+'Hello, world!'[:5]:
+This expression uses slicing to extract characters from the beginning up to (but not including) index 5.
+It includes characters at indices 0, 1, 2, 3, and 4.
+Result: 'Hello'
+
+'Hello, world!'[3:]:
+This expression uses slicing to extract characters from index 3 to the end of the string.
+It includes characters at indices 3 and beyond.
+Result: 'lo, world!'
+
+7. What do the following expressions evaluate to?
+
+'Hello'.upper()
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+ans.
+'Hello'.upper():
+The upper() method is used to convert all characters in the string to uppercase.
+Result: 'HELLO'
+
+'Hello'.upper().isupper():
+The first part 'Hello'.upper() converts the string to uppercase ('HELLO').
+The isupper() method is used to check if all characters in the string are uppercase.
+Since all characters in 'HELLO' are uppercase, the isupper() method returns True.
+Result: True
+
+'Hello'.upper().lower():
+The first part 'Hello'.upper() converts the string to uppercase ('HELLO').
+The lower() method is then used to convert all characters in the string to lowercase.
+Result: 'hello'
+
+8. What do the following expressions evaluate to?
+
+'Remember, remember, the fifth of November.'.split()
+'-'.join('There can be only one.'.split())
+ans.
+'Remember, remember, the fifth of November.'.split():
+The split() method is used to split the string into a list of substrings, using whitespace as the default delimiter.
+Result: ['Remember,', 'remember,', 'the', 'fifth', 'of', 'November.']
+
+'-'.join('There can be only one.'.split()):
+The inner part 'There can be only one.'.split() splits the string into a list of substrings using whitespace as the delimiter.
+Result: ['There', 'can', 'be', 'only', 'one.']
+The '-'.join() method is then used to join the list of substrings using '-' as the delimiter.
+Result: 'There-can-be-only-one.'
+
+9. What string methods can you use to right-justify, left-justify, and center a string?
+ans.
+Right-justify (align to the right):
+str.rjust(width[, fillchar]): Right-justifies the string within a field of the specified width. If the string is shorter than the width, it is padded on the left with the optional fillchar character (default is space).
+
+Left-justify (align to the left):
+str.ljust(width[, fillchar]): Left-justifies the string within a field of the specified width. If the string is shorter than the width, it is padded on the right with the optional fillchar character (default is space).
+
+Center (align to the center):
+str.center(width[, fillchar]): Centers the string within a field of the specified width. If the string is shorter than the width, it is padded on both sides with the optional fillchar character (default is space).
+
+10. How can you trim whitespace characters from the beginning or end of a string?
+ans.
+Remove leading whitespace (left strip):
+str.lstrip([chars]): Removes leading whitespace characters (spaces, tabs, newlines, etc.) from the left side of the string. You can also specify a string of characters to remove from the beginning.
+
+Remove trailing whitespace (right strip):
+str.rstrip([chars]): Removes trailing whitespace characters from the right side of the string. You can also specify characters to remove from the end.
+
+Remove leading and trailing whitespace (strip both sides):
+str.strip([chars]): Removes both leading and trailing whitespace characters from the string. You can also specify characters to remove from both ends.
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+1. What are the two values of the Boolean data type? How do you write them?
+ans.
+The Boolean data type has two values: True and False.
+They are written exactly as shown, with an uppercase first letter followed by lowercase letters.
+Like: True or Flase.
+
+2. What are the three Boolean operators?
+ans.
+AND: This operator is denoted by and in Python. It returns True if both operands are True, otherwise, it returns False.
+
+OR: This operator is denoted by or in Python. It returns True if at least one of the operands is True, and returns False only if both operands are False.
+
+NOT: This operator is denoted by not in Python. It returns the opposite of the operand's Boolean value. If the operand is True, not will return False, and if the operand is False, not will return True.
+
+3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+ans.
+AND (and):
+Operand 1	Operand 2	Result
+True	        True		True
+True	        False		False
+False	        True		False
+False		False		False
+
+OR (or):
+Operand 1	Operand 2	Result
+True		True		True
+True		False		True
+False		True		True
+False		False		False
+
+NOT (not):
+Operand		Result
+True		False
+False		True
+
+4. What do the following expressions evaluate to?
+ans.
+1. False
+2. False
+3. True
+4. False
+5. False
+6. True
+
+5. What are the six comparison operators?
+ans.
+Equal to (==): Checks if two values are equal.
+Not equal to (!=): Checks if two values are not equal.
+Greater than (>): Checks if the left value is greater than the right value.
+Less than (<): Checks if the left value is less than the right value.
+Greater than or equal to (>=): Checks if the left value is greater than or equal to the right value.
+Less than or equal to (<=): Checks if the left value is less than or equal to the right value.
+
+6. What is the difference between the equal to operator and the assignment operator?
+ans.
+Equal to Operator (==):
+The equal to operator is used to compare two values to determine whether they are equal or not. It returns True if the values are equal and False if they are not. For example: x == y checks if the value of x is equal to the value of y.
+
+Assignment Operator (=):
+The assignment operator is used to assign a value to a variable. It assigns the value on the right-hand side to the variable on the left-hand side. For example: x = 10 assigns the value 10 to the variable x.
+
+7. Explain what a condition is and where you would use one.
+ans.
+Conditional statements are a fundamental concept in programming that allow you to make decisions and execute different blocks of code based on whether certain conditions are met. In Python, there are mainly three types of conditional statements: if, elif (short for "else if"), and else.
+
+Syntax:
+if condition:
+    # Code to execute if the condition is True
+
+elif another_condition:
+    # Code to execute if the previous condition is False and this condition is True
+
+else:
+    # Code to execute if none of the above conditions are True
+
+8. Identify the three blocks in this code:
+
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+ans.
+Outer Block:
+spam = 0
+if spam == 10:
+    # Inner Blocks are nested within this block
+print('spam')
+
+Inner Block 1:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+
+Inner Blcok 2:
+    print('spam')
+
+9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+ans.
+spam = 1  
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+
+10. What keys can you press if your program is stuck in an infinite loop?
+ans.
+Ctrl + C: This is a common keyboard shortcut to interrupt the execution of a program in many terminals or command prompts. Pressing Ctrl and C simultaneously will usually stop the running program and return you to the command prompt.
+
+Ctrl + Break (or Pause): On some systems, especially Windows, you might need to use Ctrl and the Break (or Pause) key to break out of an infinite loop.
+
+11. What is the difference between break and continue?
+ans.
+Break:
+The break statement is used to exit or "break out of" the current loop prematurely. When encountered within a loop, it immediately terminates the loop's execution and the program continues with the next statement after the loop.
+
+Continue:
+The continue statement is used to skip the rest of the current iteration and move on to the next iteration of the loop. It effectively "skips" the remaining code within the loop for that specific iteration.
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+ans.
+range(10):
+This generates a sequence of numbers from 0 (inclusive) to 10 (exclusive), with a step size of 1. The default starting value is 0, and the default step size is 1. So, range(10) is equivalent to range(0, 10, 1).
+
+range(0, 10):
+This explicitly specifies the starting value as 0 and the ending value as 10 (exclusive), with a step size of 1. It's equivalent to range(10).
+
+range(0, 10, 1):
+This explicitly specifies the starting value as 0, the ending value as 10 (exclusive), and the step size as 1. Again, it's equivalent to range(10).
+
+13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+ans.
+num = 1
+while num <= 10:
+    print(num)
+    num += 1
+
+14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+ans.
+If you have a function named bacon() inside a module named spam, and you want to call that function after importing the spam module, you would use the following syntax:
+
+import spam
+spam.bacon()
+
+Here, you're importing the spam module and then using dot notation to access and call the bacon() function within the spam module.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+1. Does PyInputPlus come with the Python Standard Library?
+ans.No, PyInputPlus is not a part of the Python Standard Library. It is a third-party library that provides additional features for taking user inputs in a more controlled and user-friendly manner compared to the built-in input() function.
+
+If you want to use PyInputPlus, you need to install it separately. You can install it using the following command pip install pyinputplus
+
+2. Why is PyInputPlus commonly imported with import pyinputplus as pyip?
+ans.PyInputPlus is commonly imported using the alias pyip (or any other chosen alias) to make the code shorter and more convenient to write. Using an alias allows you to refer to the library by a shorter name in your code, saving you keystrokes and making your code more readable.
+
+3. What is the difference between inputInt() and inputFloat()?
+ans.Both inputInt() and inputFloat() are functions provided by the PyInputPlus library for taking user input with validation. 
+inputInt():
+The inputInt() function is used to take integer input from the user.
+It ensures that the user's input is a valid integer. If the user enters a non-integer value (e.g., a floating-point number or a string), inputInt() will keep prompting the user until a valid integer is provided.
+
+inputFloat():
+The inputFloat() function is used to take floating-point input from the user.
+It ensures that the user's input is a valid floating-point number. If the user enters a non-numeric value, inputFloat() will keep prompting the user until a valid floating-point number is provided.
+
+4. How can you ensure that the user enters a whole number between 0 and 99 using PyInputPlus?
+ans.You can ensure that the user enters a whole number between 0 and 99 using the inputInt() function from the PyInputPlus library along with the min and max arguments for validation. Here's how you can do it:
+import pyinputplus as pyip
+
+number = pyip.inputInt(prompt="Enter a number between 0 and 99: ", min=0, max=99)
+print("You entered:", number)
+
+5. What is passed to the allowRegexes and blockRegexes keyword arguments?
+ans.
+allowRegexes:
+The allowRegexes argument allows you to specify a list of regular expression patterns.
+These patterns define the allowed formats for user input. If the user's input matches any of the provided patterns, it's considered valid.
+This argument is used for allowing specific input patterns while blocking all others.
+
+blockRegexes:
+The blockRegexes argument allows you to specify a list of regular expression patterns.
+These patterns define the formats that are not allowed for user input. If the user's input matches any of the provided patterns, it's considered invalid.
+This argument is used for blocking specific input patterns while allowing all others.
+
+6. What does inputStr(limit=3) do if blank input is entered three times?
+ans.The inputStr(limit=3) function call with limit=3 and blank input means that the user is allowed to provide input up to three times, and if they enter blank input (an empty string) for all three attempts, the function will raise a TimeoutException.
+
+Steps:
+The user is prompted to enter a string.
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input (empty string), it's considered an invalid input.
+The user is prompted again to enter a string (this is the first retry).
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input again, it's considered an invalid input.
+The user is prompted once more to enter a string (this is the second retry).
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input for the third time, the function raises a TimeoutException because the limit of three retries has been reached.
+
+7. What does inputStr(limit=3, default='hello') do if blank input is entered three times?
+ans.The inputStr(limit=3, default='hello') function call with limit=3 and default='hello' means that the user is allowed to provide input up to three times, and if they enter blank input (an empty string) for all three attempts, the default value 'hello' will be returned without raising an exception.
+
+Steps:
+The user is prompted to enter a string.
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input (empty string), the default value 'hello' is returned, and the function exits.
+The user is prompted again to enter a string (this is the first retry).
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input again, the default value 'hello' is returned, and the function exits.
+The user is prompted once more to enter a string (this is the second retry).
+If the user enters a non-blank string, the input is accepted, and the function proceeds.
+If the user enters a blank input for the third time, the default value 'hello' is returned, and the function exits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

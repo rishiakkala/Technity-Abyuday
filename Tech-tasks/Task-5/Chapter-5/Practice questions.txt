@@ -1,0 +1,54 @@
+1. What does the code for an empty dictionary look like?
+ans.
+code:
+empty_dict = {}
+
+2. What does a dictionary value with a key 'foo' and a value 42 look like?
+ans.A dictionary value with a key 'foo' and a value 42 in Python 
+
+my_dict = {'foo': 42}
+the key 'foo' is associated with the value 42 in the dictionary my_dict. You can access the value using the key 'foo' like this: my_dict['foo'].
+
+3. What is the main difference between a dictionary and a list?
+ans.
+Dictionary:
+- A dictionary is an unordered collection of key-value pairs. Each key in a dictionary is unique and maps to a corresponding value. Dictionaries are enclosed in curly braces {}, and key-value pairs are separated by colons :. Keys are usually strings, and values can be of any data type.
+-Elements in a dictionary are accessed using their keys. You use the keys to look up values associated with them.
+-Dictionaries are mutable, which means you can add, remove, or modify key-value pairs after the dictionary is created.
+- Dictionaries are used to map keys to corresponding values, making it easy to store and retrieve data based on meaningful labels (keys).
+
+List:
+-A list is an ordered collection of elements. Elements in a list are ordered by their positions, and each element is assigned an index based on its position in the list. Lists are enclosed in square brackets [].
+-Elements in a list are accessed using their indices. You use integer indices to retrieve elements at specific positions.
+-Lists are mutable as well. You can add, remove, or modify elements in a list after its creation.
+-Lists are used to store sequences of elements that have a specific order.
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+ans.If you try to access spam['foo'] and spam is {'bar': 100}, you will encounter a KeyError because the key 'foo' does not exist in the dictionary spam.
+
+spam = {'bar': 100}
+value = spam['foo']  # This will raise a KeyError
+The KeyError is raised because you're trying to access a dictionary value using a key that is not present in the dictionary. To avoid this error, you should only access keys that actually exist in the dictionary. You can use the in keyword to check if a key exists before attempting to access it:
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+ans.
+'cat' in spam:
+This expression checks if the key 'cat' exists directly in the dictionary spam.
+If 'cat' is a key in the dictionary, this expression evaluates to True. If 'cat' is not a key, it evaluates to False.
+
+'cat' in spam.keys():
+This expression checks if the key 'cat' exists in the list of keys returned by the keys() method of the dictionary spam.
+If 'cat' is a key in the dictionary, this expression evaluates to True. If 'cat' is not a key, it evaluates to False.
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+ans.This answer is same as question 5.
+
+7. What is a shortcut for the following code?
+
+if 'color' not in spam:
+    spam['color'] = 'black'
+ans.A shortcut for the given code that adds a key-value pair to a dictionary if the key doesn't already exist is to use the setdefault() method:
+spam.setdefault('color', 'black').
+
+8. What module and function can be used to “pretty print” dictionary values?
+ans.The pprint module provides a function called pprint() that can be used to "pretty print" (format in a more readable way) dictionary values in Python. This module is useful when you want to display complex data structures, such as dictionaries, in a more organized and visually appealing format.
